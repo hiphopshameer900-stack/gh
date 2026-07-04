@@ -1,0 +1,37 @@
+/* Core Layout Settings */
+html, body {
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+}
+
+.font-cursive {
+    font-family: 'Great Vibes', cursive;
+}
+
+/* Background Color State Modifications driven by script steps */
+body.phase-dark {
+    background-color: #020617; /* slate-950 */
+    color: #f8fafc;
+}
+
+body.phase-sunrise {
+    background: linear-gradient(180deg, #0f172a 0%, #3b0764 50%, #fef08a 100%);
+    color: #f8fafc;
+}
+
+body.phase-blossom {
+    background: linear-gradient(180deg, #fef08a 0%, #fce7f3 60%, #fae8ff 100%);
+    color: #1e293b;
+}
+
+/* Custom Text Shadow for High Readability on Gradient Backgrounds */
+.shadow-text {
+    text-shadow: 0 4px 20px rgba(253, 244, 180, 0.4);
+}
+
+/* Dynamic Panel Rules */
+.panel {
+    position: relative;
+    z-index: 10;
+}
